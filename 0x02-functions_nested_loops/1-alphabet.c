@@ -1,24 +1,15 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * main - entry point
+ * print_alphabet - print alphabet in lowercase followed by newline
  *
- * Description: Prints Holberton with _putchar
- *
- * Return: always 0
+ * Return: void
  */
-
-int main(void)
+void print_alphabet(void)
 {
-	int i = 0;
-	char c;
-	char s[] = "_putchar\n";
+	char c = 'a';
 
-	while (i <= 8)
-	{
-		c = s[i];
-		_putchar(c);
-		i++;
-	}
-	return (0);
+	while (c <= 'z')
+		_putchar(c++);
+	_putchar('\n');
 }
